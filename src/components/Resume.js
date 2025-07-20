@@ -9,7 +9,7 @@ const Resume = () => {
             <div className='md:w-1/2 flex  justify-center'>
                 <div className='flex flex-col justify-center  text-black '>
                 <h1 className='text-xl md:text-4xl text-gray-700 border-b-4 mb-5 w-[90px] md:w-[140px] border-yellow-400 font-bold '>Resume</h1>
-                <p className='text-xl md:text-2xl lg:text-3xl mb-5'>You can view my resume <a  className='button'> Download</a></p> 
+                <p className='text-xl md:text-2xl lg:text-3xl mb-5'>You can view my resume <a href='#' className='button'> Download</a></p> 
                 
                 </div>
             </div>
