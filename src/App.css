@@ -8,11 +8,11 @@ header ul li{
 }
 
 .bg-primary{
-    background-color:#a3416d
+    background-color:#b90a0a
 }
 
 .bg-secondary{
-    background-color: rgba(4, 4, 5, 0.205)
+    background-color: rgba(4, 4, 5, 0.842)
 }
 
 .mobile-nav{
@@ -25,6 +25,10 @@ header ul li{
 
 .button{
     @apply bg-primary px-5 py-2 mb-2 font-bold hover:border-2 border-white rounded mb-2
+}
+
+.hover{
+    @apply hover:text-black transition-colors duration-300
 }
 
 html{

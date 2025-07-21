@@ -5,9 +5,9 @@ import Socialmedia  from '../assets/social media.jpg'
 
 const Projects = () => {
   return (
-    <section className="flex flex-col py-20 px-5 justify-center bg-secondary text-xl md:text-2xl text-black min-h-screen" id='projects'>
+    <section className="flex flex-col py-20 px-5 justify-center bg-secondary text-xl md:text-2xl text-white min-h-screen" id='projects'>
     <div className="w-full flex flex-col">
-     <h1 className="text-2xl md:text-4xl mb-5 border-b-4 w-[140px] border-yellow-400 font-bold">Projects</h1>
+     <h1 className="text-2xl md:text-4xl mb-5 border-b-4 w-[140px] text-red-400 border-yellow-400 font-bold">Projects</h1>
      <p className='px-5 py-8'>These are some of my best projects.I have built these with HTML,CSS,Javascript,React,Tailwind CSS.Check them out.</p>
     </div>
     <div className="w-full">

@@ -9,12 +9,12 @@ function Header() {
     <header className='flex justify-between px-5 py-2 bg-primary '>
         <a href='#contact' className='text-2xl  md:text-3xl font-bold' >Jeevitha N</a>
             <nav className='hidden md:block'> 
-                <ul className="flex font-bold md:text-xl text-white">
-                   <li> <a href='/'>Home </a></li>
-                    <li><a href='#about'>About</a></li>
-                    <li><a href='#projects'>Projects</a></li>
-                    <li><a href='#resume'>Resume</a></li>
-                    <li><a href='#contacts'>Contacts</a></li>
+                <ul className="flex font-bold md:text-xl text-white ">
+                   <li> <a className='hover' href='/'>Home </a></li>
+                    <li><a className='hover' href='#about'>About</a></li>
+                    <li><a className='hover' href='#projects'>Projects</a></li>
+                    <li><a className='hover' href='#resume'>Resume</a></li>
+                    <li><a className='hover' href='#contacts'>Contacts</a></li>
                 </ul>
             </nav>
 

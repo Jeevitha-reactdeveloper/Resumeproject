@@ -7,8 +7,8 @@ const About = () => {
             <img  className='' src={Aboutimg} alt="about"/>
         </div>
         <div className='md:w-1/2 flex  justify-center'>
-            <div className='flex flex-col justify-center  text-black '>
-            <h1 className='text-2xl md:text-4xl  border-b-4 mb-5 w-[170px] border-yellow-400 font-bold '>About Me</h1>
+            <div className='flex flex-col justify-center  text-white '>
+            <h1 className='text-2xl md:text-4xl  border-b-4 mb-5 w-[170px] text-red-400 border-yellow-400 font-bold '>About Me</h1>
             <p className='text-xl md:text-2xl lg:text-3xl mb-5'>Hi,My name is Jeevitha.I am a  React Frontend Developer.I built Dynamic Websites Using React.js and Tailwind CSS</p> 
             <p className='text-xl md:text-2xl lg:text-3xl'>I am Proficient in Frontend skills Like HTML,CSS,Javascript,React,Tailwind CSS,API Integration,Git and Github.</p>
             </div>
