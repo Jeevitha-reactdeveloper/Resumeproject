@@ -12,7 +12,8 @@ const Firstsection = () => {
             <div className='flex flex-row items-center py-6  px-10 text-blue-600  md:px-60'>
                 <a href='https://www.linkedin.com/in/jeevitha-be-194776203/ '
                 target='_blank'
-                className='pr-5 hover:text-white'><AiOutlineLinkedin size={50}/></a>
+                className='pr-5 hover:text-white'
+                rel="noopener noreferrer"><AiOutlineLinkedin size={50}/></a>
                 <a href='https://github.com/Jeevitha-reactdeveloper'
                 target='_blank'
                 className='pr-5 hover:text-white'
