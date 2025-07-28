@@ -1,5 +1,5 @@
 import first from '../assets/website-development.png';
-import { AiOutlineLinkedin,AiOutlineInstagram,AiOutlineFacebook } from "react-icons/ai";
+import { AiOutlineLinkedin,AiOutlineInstagram,AiOutlineGithub } from "react-icons/ai";
 const Firstsection = () => {
   return (
     <section className=' min-h-screen flex flex-col md:flex-row items-center px-6 py-49 bg-secondary justify-center md:justify-between gap-8' id='firstsection'>
@@ -10,9 +10,17 @@ const Firstsection = () => {
            </div>
            
             <div className='flex flex-row items-center py-6  px-10 text-blue-600  md:px-60'>
-                <button className='pr-5 hover:text-white'><AiOutlineLinkedin size={50}/></button> 
-                <button className='pr-5  hover:text-white'><AiOutlineInstagram size={50}/></button>
-                <button className='pr-5  hover:text-white'><AiOutlineFacebook size={50}/></button>
+                <a href='https://www.linkedin.com/in/jeevitha-be-194776203/ '
+                target='_blank'
+                className='pr-5 hover:text-white'><AiOutlineLinkedin size={50}/></a>
+                <a href='https://github.com/Jeevitha-reactdeveloper'
+                target='_blank'
+                className='pr-5 hover:text-white'
+                rel="noopener noreferrer"><AiOutlineGithub size={50}/></a>
+                <a href='https://github.com/Jeevitha-reactdeveloper'
+                target='_blank'
+                rel="noopener noreferrer"
+                className='pr-5 hover:text-white'><AiOutlineInstagram size={50}/></a>
             </div>
         </div>
         <div>
