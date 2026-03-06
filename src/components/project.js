@@ -25,7 +25,7 @@ export default function Projects() {
       title: "Portfolio Website",
       description: "A personal portfolio website built using React to showcase my projects, skills, and contact information. It highlights my frontend development work and provides an easy way for visitors to view my projects and connect with me.",
       tech: ["React", "HTML","CSS"],
-      link: "",
+      link: "https://jeevithaportfoliowebsite.netlify.app/",
       github:""
     },
     {

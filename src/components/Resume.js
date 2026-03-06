@@ -16,7 +16,7 @@ const Resume = () => {
                 {/*<h1 className='hidden md:block text-xl md:text-4xl md:my-3 text-orange-500 border-b-2 mb-6 w-[90px] md:w-[140px] border-white font-bold '>Resume</h1>*/}            
                 <p className='text-xl md:text-2xl mb-6 md:py-3'> Download my resume to explore my technical skills, projects,
                   and experience as a Full Stack Developer.</p> 
-              <a href='/resume.pdf' download className='button hover '> Download Resume</a>
+              <a href='/Jeevitharesume.pdf' download className='button hover '> Download Resume</a>
                 
             </div>
           </div>
