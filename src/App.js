@@ -4,8 +4,9 @@ import Contact from './components/Contact';
 import Firstsection from './components/Firstsection';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Projects from './components/Projects';
+import Project from './components/project';
 import Resume from './components/Resume';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Header/>
       <Firstsection/>
       <About/>
-      <Projects/>
+      <Skills/>
+      <Project/>
       <Resume/>
       <Contact/>
       <Footer/>

@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.App {
+  background: linear-gradient(to right, #181313, #fd6811);
+}
 header ul li{
     @apply px-3
 }
 
 .bg-primary{
-    background-color:#b90a0a
+    background-color:rgba(253, 110, 0, 0.897)
 }
 
 .bg-secondary{
@@ -33,4 +35,8 @@ header ul li{
 
 html{
     scroll-behavior: smooth;
+}
+
+.main-gradient {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #ff6a00);
 }

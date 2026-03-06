@@ -1,17 +1,85 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 
-const Contact = () => {
+export default function Contact() {
+
+      const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_vuxa3jc",
+      "template_6rpdai5",
+      form.current,
+      "gRfurdAK-Va1q4oZ0"
+    )
+    .then(() => {
+      alert("Message sent successfully");
+       form.current.reset();
+    })
+    .catch(() => {
+      alert("Failed to send message");
+    });
+  };
   return (
-    <section className='flex flex-col bg-secondary px-5  py-35 min-h-[400px]' id='contacts'>
-        <div className=' flex flex-col items-center  text-white py-35'>
-            <h1 className='text-2xl md:text-4xl text-red-400 border-b-4 mb-5 w-[90px] md:w-[140px] border-yellow-400 font-bold '>Contact</h1>
-            <p className='text-xl md:text-2xl lg:text-3xl mb-5'>If You want to discuss more in detail,Please contact me.</p>
-            <p className='py-2'><span className='font-bold'>Email :</span>bejeevitha@gmail.com</p> 
-            <p className='py-2'><span className='font-bold'>Phone :</span>+91 8110087041</p> 
+    <section className="py-20 bg-secondary text-white" id="contacts">
+      <div className="max-w-6xl mx-auto px-6 gap-10 items-center">
+        <h2 className="text-xl md:text-3xl font-bold mb-6 text-orange-500">Contact Me</h2>
+        <div className="flex flex-col md:flex-row">
+          {/* Left Side */}
+          <div>
+            <p className="text-white/80 mb-10">
+              I'm always open to discussing new projects, opportunities,
+              or collaborations. Feel free to reach out!
+            </p>
 
+            <div className="flex flex-col  text-white ">
+              <p>📧 <a href="mailto:bejeevitha@gmail.com">bejeevitha@gmail.com</a></p>
+              <a href="https://www.linkedin.com/in/jeevitha-frontenddeveloper/" className="mt-8"
+              target="_blank"
+              rel="noopener noreferrer">Linkedin</a><br></br>
+              <a href="https://github.com/Jeevitha-reactdeveloper" className="mt-8"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+
+          {/* Right Side - Form */}
+          <form ref={form} onSubmit={sendEmail} 
+          className="bg-white/20 backdrop-blur-lg p-8 mt-2 rounded-2xl border border-white/30 shadow-xl space-y-5">
+            
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full p-3 rounded-lg bg-white/30 placeholder-white/70 text-white focus:outline-none focus:ring-2 focus:ring-white"
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full p-3 rounded-lg bg-white/30 placeholder-white/70 text-white focus:outline-none focus:ring-2 focus:ring-white"
+            />
+
+            <textarea
+              rows="4"
+              placeholder="Your Message"
+              className="w-full p-3 rounded-lg bg-white/30 placeholder-white/70 text-white focus:outline-none focus:ring-2 focus:ring-white"
+            ></textarea>
+
+            <button
+              type="submit"
+              className="w-full py-3 bg-white text-purple-700 rounded-full font-semibold hover:scale-105 transition duration-300"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
-    </section>
-  )
-}
 
-export default Contact
+      </div>
+    </section>
+  );
+}
+  
+
